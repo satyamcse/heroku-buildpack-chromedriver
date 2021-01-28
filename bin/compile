@@ -34,9 +34,6 @@ else
 fi
 indent "Version $VERSION"
 
-topic "Installing 7Zip"
-apt install p7zip-full
-
 topic "Downloading chromedriver v$VERSION"
 ZIP_URL="https://github.com/satyamcse/heroku-buildpack-chromedriver/raw/master/chromedriver"
 curl -s -o $BIN_DIR/chromedriver $ZIP_URL
