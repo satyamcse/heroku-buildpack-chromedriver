@@ -35,9 +35,10 @@ fi
 indent "Version $VERSION"
 
 topic "Downloading chromedriver v$VERSION"
-ZIP_URL="https://github.com/satyamcse/heroku-buildpack-chromedriver/raw/master/chromedriver_linux_88"
+ZIP_URL="https://github.com/satyamcse/heroku-buildpack-chromedriver/raw/master/chromedriver"
 ZIP_LOCATION="/tmp/chromedriver.zip"
-curl -s -o $BIN_DIR $ZIP_URL
+BIN_LOCATION = $BIN_DIR/chromedriver
+curl -s -o $BIN_DIR $BIN_LOCATION
 indent "Downloaded"
 
 topic "Creating chromedriver export scripts"
